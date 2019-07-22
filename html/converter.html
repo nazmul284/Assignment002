@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Converter || Assignment002</title>
+
+<link rel="stylesheet" href="../css/bootstrap.min.css" />
+<link rel="stylesheet" href="../css/font-awesome.min.css" />
+<link rel="stylesheet" href="../css/jquery-ui.min.css" />
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+
+
+<header class="header-section">
+  
+<nav class="main-navbar">
+<div class="container">
+
+<ul class="main-menu">
+<li><a href="../index.html">Home</a></li>
+<li><a href="converter.html">Coverter</a></li>
+<li><a href="quiz.html">Quiz</a></li>
+</ul>
+</div>
+</nav>
+</header>
+
+<main>
+  <div class="mt-5"></div>
+    <section>
+      <div class="card" style="width: auto; height: auto; margin-left: 2rem;">
+        <div class="card-body">
+          <div id="convert">
+              <div class="mt-5"></div>
+              <div class="container">
+                  <div class="row">
+                      <div class="col-6">
+                          <div class="card">
+                              <div class="card-body">
+                                  <!-- <form> -->
+
+                                  <div class="input-group m-3">
+                              <span class="input-group-text ">
+                              <img src="../img/bangladesh.png" style="width: 20px;">
+                                  <div class="ml-1"></div>
+                                  BDT
+                              </span>
+                                      <input id="inBDT" type="number" class="form-control" placeholder="Enter amount">
+                                      <span class="input-group-text">৳
+                              </span>
+                                  </div>
+
+                                      <div class="input-group m-3">
+                                  <span class="input-group-text ">
+                                  <img src="../img/united-states-of-america.png" style="width: 20px;">
+                                      <div class="ml-1"></div>
+                                      USD
+                                  </span>
+                                          <input id="inUSD" type="number" class="form-control" placeholder="Enter amount">
+                                          <span class="input-group-text">$
+                                  </span>
+                                      </div>
+
+                                      <div class="input-group m-3">
+                                  <span class="input-group-text ">
+                                  <img src="../img/united-kingdom.png" style="width: 20px;">
+                                      <div class="ml-1"></div>
+                                      GBP
+                                  </span>
+                                          <input id="inGBP" type="number" class="form-control" placeholder="Enter amount">
+                                          <span class="input-group-text">£
+                                  </span>
+                                      </div>
+
+                                      <div class="input-group m-3">
+                                  <span class="input-group-text ">
+                                  <img src="../img/canada.png" style="width: 20px;">
+                                      <div class="ml-1"></div>
+                                      CAD
+                                  </span>
+                                          <input id="inCAD" type="number" class="form-control" placeholder="Enter amount">
+                                          <span class="input-group-text">$
+                                  </span>
+                                      </div>
+
+                                      <div class="input-group m-3">
+                                  <span class="input-group-text ">
+                                  <img src="../img/european-union.png" style="width: 20px;">
+                                      <div class="ml-1"></div>
+                                      EUR
+                                  </span>
+                                          <input id="inEUR" type="number" class="form-control" placeholder="Enter amount">
+                                          <span class="input-group-text">€
+                                  </span>
+                                      </div>
+
+                                      <div class="input-group m-3">
+                                  <span class="input-group-text ">
+                                  <img src="../img/australia.png" style="width: 20px;">
+                                      <div class="ml-1"></div>
+                                      AUD
+                                  </span>
+                                          <input id="inAUD" type="number" class="form-control" placeholder="Enter amount">
+                                          <span class="input-group-text">$
+                                  </span>
+                                      </div>
+                                  <!-- </form> -->
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-6 text-center">
+                          <div class="card">
+                              <div class="card-body">
+                                  <h6 class=" alert alert-danger text-capitalize">currency rate will changeable</h6>
+
+
+                                  <table class="table table-striped table-dark table-hover">
+                                    <thead  class="bg-warning">
+                                      <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">BDT</th>
+                                        <th>USD</th>
+                                        <th>GBP</th>
+                                        <th>CAD</th>
+                                        <th>EUR</th>
+                                        <th>AUD</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <th>1 BDT</th>
+                                        <td>1</td>  <!---BDT--->
+                                        <td>.01</td>  <!---USD--->
+                                        <td>0.009</td><!---GBP--->
+                                        <td>0.015</td><!---CAD--->
+                                        <td>0.010</td><!---EUR--->
+                                        <td>0.016</td><!---AUD--->
+                                      </tr>
+
+                                      <tr>
+                                        <th>1 USD</th>
+                                        <td>84.53</td>  <!---BDT--->
+                                        <td>1</td>  <!---USD--->
+                                        <td>.79</td><!---GBP--->
+                                        <td>1.43</td><!---CAD--->
+                                        <td>.89</td><!---EUR--->
+                                        <td>1.43</td><!---AUD--->
+                                      </tr>
+
+                                      <tr>
+                                        <th>1 GBP</th>
+                                        <td>107.256</td>  <!---BDT--->
+                                        <td>1.27</td>  <!---USD--->
+                                        <td>1</td><!---GBP--->
+                                        <td>1.70</td><!---CAD--->
+                                        <td>1.13</td><!---EUR--->
+                                        <td>1.82</td><!---AUD--->
+                                      </tr>
+
+                                      <tr>
+                                        <th>1 CAD</th>
+                                        <td>62.981</td>  <!---BDT--->
+                                        <td>.74</td>  <!---USD--->
+                                        <td>.59</td><!---GBP--->
+                                        <td>1</td><!---CAD--->
+                                        <td>.66</td><!---EUR--->
+                                        <td>1.06</td><!---AUD--->
+                                      </tr>
+
+
+                                      <tr>
+                                        <th>1 EUR</th>
+                                        <td>94.923</td>  <!---BDT--->
+                                        <td>1.12</td>  <!---USD--->
+                                        <td>.88</td><!---GBP--->
+                                        <td>1.50</td><!---CAD--->
+                                        <td>1</td><!---EUR--->
+                                        <td>1.61</td><!---AUD--->
+                                      </tr>
+
+                                      <tr>
+                                        <th>1 AUD</th>
+                                        <td>58.9301</td>  <!---BDT--->
+                                        <td>.69</td>  <!---USD--->
+                                        <td>.55</td><!---GBP--->
+                                        <td>.93</td><!---CAD--->
+                                        <td>.62</td><!---EUR--->
+                                        <td>1</td><!---AUD--->
+                                      </tr>
+
+
+
+                                    </tbody>
+                                  </table>
+
+                                  <a href="https://www.xe.com/currencyconverter/"><span class="font-weight-bold text-dark">source: </span> https://www.xe.com/currencyconverter//</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>    
+    </section>
+</main>
+
+
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/converter.js"></script>
+
+ <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>Copyright &copy; 2019</small>
+    </div>
+  </footer>
+
+</body>
+
+</html>
